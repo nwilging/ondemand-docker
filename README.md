@@ -19,7 +19,7 @@ to the host on port 22. You may either forward, or just run SSH on an entirely d
 **Alternate SSH Port**: Currently, this is setup to run SSH on port `221`. If you want to change the port, follow these
 steps:
 
-1. In `docker/sshd_config` on line `17` that currently has `PORT 221`, change that to `PORT <your desired SSH port>`
+1. In `docker/sshd_config` on line `2` that currently has `PORT 221`, change that to `PORT <your desired SSH port>`
 2. In `docker-compose.yml` on line `6` that currently has `221:221`, change that to `<port>:<port>` where `<port>`
 is the port you entered in step 1.
 
